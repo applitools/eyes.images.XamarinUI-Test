@@ -22,9 +22,17 @@ Xamarin.UI Test expects an Emulator to be already running, it can pick up the em
                 .ApkFile("../../lib/selendroid-test-app.apk")
                 .DeviceSerial("")
 ```
+```
+ app = ConfigureApp
+        .iOS
+        .AppBundle("/path/to/iosapp.app")
+        .StartApp();
+```
 ## Applitools Eyes Images SDK
 
 All eyes methods that are required for visual validations can be invoked via an instance of Eyes class.
 ```
 Eyes eyes = new Eyes()
 ```
+
+## Running the tests

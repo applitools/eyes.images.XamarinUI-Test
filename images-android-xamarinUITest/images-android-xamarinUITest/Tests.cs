@@ -19,8 +19,6 @@ namespace imagesandroidxamarinUITest
         [SetUp]
         public void BeforeEachTest()
         {
-            var dir = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory());
-            Console.WriteLine(dir);
             app = ConfigureApp
                 .Android
                 .ApkFile("../../lib/selendroid-test-app.apk")
@@ -52,7 +50,7 @@ namespace imagesandroidxamarinUITest
                 app.Tap(x => x.Id("input_preferedProgrammingLanguage"));
                 app.TapCoordinates(79, 1070);
                 app.Tap(x => x.Id("input_adds"));
-                System.Threading.Thread.Sleep(2);//For Demo.Feel free to remove this line. 
+                System.Threading.Thread.Sleep(2);//For Demo.Feel free to remove this line.
                 var eyesImage2 = app.Screenshot("After Input- screen.").FullName;
 
                 eyes.CheckImageFile(eyesImage2);
