@@ -29,7 +29,7 @@ namespace imagesandroidxamarinUITest
                 .StartApp();
 
             eyes = new Eyes();
-            eyes.ApiKey = "HZeTQj103qqbLJkpT0Ez81CTbivkDEYQx4Q7GjM104Kv2Hg110";
+            eyes.ApiKey = "your-api-key";
             eyes.SetAppEnvironment("Nexus 6P ", "MyNewTest");
         }
 
